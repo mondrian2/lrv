@@ -17,7 +17,7 @@ class LivroController extends Controller
 
     public function index()
     {
-        $models = $this->model::with('pacotes')->toJson(JSON_PRETTY_PRINT);
+        $models = $this->model->with('pacotes')->toJson(JSON_PRETTY_PRINT);
         return response($models, 200);
     }
 
