@@ -62,7 +62,7 @@ class LivroController extends Controller
     {
         if (Livro::where('id', $id)->exists()) {
             $livro = Livro::find($id);
-            $livro->titulo = is_null($request->titulo) ? $livro->titulo : $livro->titulo;
+            $livro->titulo = is_null($request->titulo) ? $livro->titulo : $request->titulo;
             $livro->save();
             return response()->json([
               "message" => "records updated successfully"
