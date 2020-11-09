@@ -12,4 +12,9 @@ class Livro extends Model
      * @var array
      */
     protected $fillable = ['titulo'];
+
+    public function pacotes()
+    {
+        return $this->hasMany('App\Pacote');
+    }
 }
