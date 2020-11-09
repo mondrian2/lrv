@@ -15,6 +15,6 @@ class Livro extends Model
 
     public function pacotes()
     {
-        return $this->hasMany('App\Pacote');
+        return $this->hasMany('App\Pacote', 'livro_id');
     }
 }
