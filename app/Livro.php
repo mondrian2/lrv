@@ -11,7 +11,7 @@ class Livro extends Model
      *
      * @var array
      */
-    protected $fillable = ['titulo'];
+    protected $fillable = ['titulo', 'pacotes'];
 
     public function pacotes()
     {
