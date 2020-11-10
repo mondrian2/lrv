@@ -4,16 +4,15 @@ namespace App\Http\Controllers\Api;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-use App\Pacote;
+use App\Questao;
 
-
-class PacoteController extends Controller
+class QuestaoController extends Controller
 {
-    public $model = Pacote::class;
+    public $model = Questao::class;
 
     public function index()
     {
-        $models = $this->model::with('questoes')->get()->toJson(JSON_PRETTY_PRINT);
+        $models = $this->model::with('itens')->get()->toJson(JSON_PRETTY_PRINT);
         return response($models, 200);
     }
 
@@ -39,8 +38,10 @@ class PacoteController extends Controller
     {
         if ($this->model::where('id', $id)->exists()) {
             $model = $this->model::find($id);
-            $model->titulo = is_null($request->titulo) ? $model->titulo : $request->titulo;
-            $model->livro_id = is_null($request->livro_id) ? $model->livro_id : $request->livro_id;
+            $model->tipo = is_null($request->tipo) ? $model->tipo : $request->tipo;
+            $model->comentario = is_null($request->comentario) ? $model->comentario : $request->comentario;
+            $model->enunciado = is_null($request->enunciado) ? $model->enunciado : $request->enunciado;
+            $model->peso = is_null($request->peso) ? $model->peso : $request->peso;
             $model->save();
             return response()->json([
               "message" => "records updated successfully"

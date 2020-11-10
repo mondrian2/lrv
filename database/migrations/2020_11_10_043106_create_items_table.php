@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateQuestaosTable extends Migration
+class CreateItemsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,13 +13,10 @@ class CreateQuestaosTable extends Migration
      */
     public function up()
     {
-        Schema::create('questoes', function (Blueprint $table) {
+        Schema::create('items', function (Blueprint $table) {
             $table->id();
-            $table->text('enunciado');
-            $table->text('tipo');
-            $table->text('comentario');
-            $table->text('peso');
-            $table->foreignId('pacote_id');	
+            $table->text('label');
+            $table->foreignId('questao_id');	
             $table->timestamps();
         });
     }
@@ -31,6 +28,6 @@ class CreateQuestaosTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('questaos');
+        Schema::dropIfExists('items');
     }
 }

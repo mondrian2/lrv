@@ -19,6 +19,8 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 
 Route::resource('livros', 'Api\LivroController', ['except' => ['create', 'edit']]); 
-Route::resource('pacotes', 'Api\LivroController', ['except' => ['create', 'edit']]); 
-Route::resource('questoes', 'Api\LivroController', ['except' => ['create', 'edit']]); 
+Route::resource('pacotes', 'Api\PacoteController', ['except' => ['create', 'edit']]); 
+Route::resource('questoes', 'Api\QuestaoController', ['except' => ['create', 'edit']]); 
+Route::resource('items', 'Api\ItemsController', ['except' => ['create', 'edit']]); 
+Route::resource('options', 'Api\OptionsController', ['except' => ['create', 'edit']]); 
 

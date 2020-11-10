@@ -4,15 +4,15 @@ namespace App\Http\Controllers\Api;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-use App\Livro;
+use App\Item;
 
-class LivroController extends Controller
+class ItemsController extends Controller
 {
-    public $model = Livro::class;
- 
+    public $model = Item::class;
+
     public function index()
     {
-        $models = $this->model::with('pacotes')->get()->toJson(JSON_PRETTY_PRINT);
+        $models = $this->model::with('options')->get()->toJson(JSON_PRETTY_PRINT);
         return response($models, 200);
     }
 
@@ -25,27 +25,27 @@ class LivroController extends Controller
     public function show($id)
     {
         if ($this->model::where('id', $id)->exists()) {
-            $livro = $this->model::where('id', $id)->get()->toJson(JSON_PRETTY_PRINT);
-            return response($livro, 200);
+            $model = $this->model::where('id', $id)->get()->toJson(JSON_PRETTY_PRINT);
+            return response($model, 200);
           } else {
             return response()->json([
-              "message" => "Book not found"
+              "message" => "not found"
             ], 404);
           }
     }
 
     public function update(Request $request, $id)
     {
-        if (Livro::where('id', $id)->exists()) {
-            $livro = Livro::find($id);
-            $livro->titulo = is_null($request->titulo) ? $livro->titulo : $request->titulo;
-            $livro->save();
+        if ($this->model::where('id', $id)->exists()) {
+            $model = $this->model::find($id);
+            $model->label = is_null($request->label) ? $model->label : $request->label;
+            $model->save();
             return response()->json([
               "message" => "records updated successfully"
             ], 200);
           } else {
             return response()->json([
-              "message" => "Book not found"
+              "message" => "not found"
             ], 404);
           }
     
@@ -53,15 +53,15 @@ class LivroController extends Controller
 
     public function destroy($id)
     {
-        if (Livro::where('id', $id)->exists()) {
-            $livro = Livro::find($id);
-            $livro->delete();
+        if ($this->model::where('id', $id)->exists()) {
+            $model = $this->model::find($id);
+            $model->delete();
             return response()->json([
                 "message" => "records deleted"
               ], 202);
             } else {
               return response()->json([
-                "message" => "Book not found"
+                "message" => "not found"
             ], 404);
         }
     }
