@@ -25,8 +25,8 @@ class LivroController extends Controller
     public function show($id)
     {
         if ($this->model::where('id', $id)->exists()) {
-            $livro = $this->model::where('id', $id)->get()->toJson(JSON_PRETTY_PRINT);
-            return response($livro, 200)->first();
+            $livro = $this->model::where('id', $id)->first()->toJson(JSON_PRETTY_PRINT);
+            return response($livro, 200);
           } else {
             return response()->json([
               "message" => "Book not found"
