@@ -31,6 +31,6 @@ class CreateQuestaosTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('questaos');
+        Schema::dropIfExists('questoes');
     }
 }
