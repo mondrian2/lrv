@@ -8,10 +8,11 @@ class Questao extends Model
 {
     protected $table = 'questoes';
     protected $fillable = [
+        'enunciado',
         'tipo',
         'comentario',
-        'enunciado',
         'peso',
+        'pacote_id',
         'itens'
     ];
 
