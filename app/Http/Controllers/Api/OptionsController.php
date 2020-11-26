@@ -26,7 +26,7 @@ class OptionsController extends Controller
     public function show($id)
     {
         if ($this->model::where('id', $id)->exists()) {
-            $model = $this->model::where('id', $id)->get()->toJson(JSON_PRETTY_PRINT);
+            $model = $this->model::where('id', $id)->first()->toJson(JSON_PRETTY_PRINT);
             return response($model, 200);
           } else {
             return response()->json([
