@@ -12,11 +12,12 @@ class Item extends Model
 
     protected $fillable = [
         'label',
-        'options'
+        'options',
+        'questao'
     ];
 
-    // public function options()
-    // {
-    //     return $this->hasMany('App\Options', 'item_id');
-    // }
+    public function questao()
+    {
+        return $this->belongsTo('App\Questao')->withDefault();
+    }
 }
