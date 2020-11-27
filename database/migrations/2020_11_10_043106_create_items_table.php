@@ -17,7 +17,7 @@ class CreateItemsTable extends Migration
             $table->id();
             $table->text('label');
             $table->text('options');
-            $table->foreignId('questao_id');	
+            $table->foreignId('questoes_id');	
             $table->timestamps();
         });
     }
