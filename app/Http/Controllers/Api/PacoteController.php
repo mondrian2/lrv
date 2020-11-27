@@ -13,7 +13,7 @@ class PacoteController extends Controller
 
     public function index()
     {
-        $models = $this->model::with('questoes')->get()->toJson(JSON_PRETTY_PRINT);
+        $models = $this->model::with('questoes', 'livro')->get()->toJson(JSON_PRETTY_PRINT);
         return response($models, 200);
     }
 
@@ -25,7 +25,7 @@ class PacoteController extends Controller
 
     public function show($id)
     {
-        if ($this->model::where('id', $id)->exists()) {
+        if ($this->model::with('questoes', 'livro')->where('id', $id)->exists()) {
             $model = $this->model::where('id', $id)->first()->toJson(JSON_PRETTY_PRINT);
             return response($model, 200);
           } else {
