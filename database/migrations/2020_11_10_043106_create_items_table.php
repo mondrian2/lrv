@@ -16,7 +16,7 @@ class CreateItemsTable extends Migration
         Schema::create('items', function (Blueprint $table) {
             $table->id();
             $table->text('label');
-            $table->array('options');
+            $table->text('options');
             $table->foreignId('questao_id');	
             $table->timestamps();
         });

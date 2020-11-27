@@ -11,7 +11,8 @@ class Item extends Model
     ];
 
     protected $fillable = [
-        'label'
+        'label',
+        'options'
     ];
 
     // public function options()
