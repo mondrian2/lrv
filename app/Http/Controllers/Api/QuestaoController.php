@@ -12,7 +12,7 @@ class QuestaoController extends Controller
 
     public function index()
     {
-        $models = $this->model::with('itens', 'pacotes')->get()->toJson(JSON_PRETTY_PRINT);
+        $models = $this->model::with('itens', 'pacote')->get()->toJson(JSON_PRETTY_PRINT);
         return response($models, 200);
     }
 
