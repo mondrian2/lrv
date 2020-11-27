@@ -13,8 +13,14 @@ class Questao extends Model
         'comentario',
         'peso',
         'pacote_id',
+        'itens',
         'pacote'
     ];
+
+    public function itens()
+    {
+        return $this->hasMany('App\Item', 'questao_id');
+    }
 
     public function pacote()
     {
