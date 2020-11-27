@@ -19,7 +19,7 @@ class Questao extends Model
 
     public function itens()
     {
-        return $this->hasMany('App\Item', 'questao_id');
+        return $this->hasMany('App\Item', 'questoes_id');
     }
 
     public function pacote()
