@@ -24,6 +24,6 @@ class Questao extends Model
 
     public function pacote()
     {
-        return $this->belongsTo('App\Pacote', 'pacote_id');
+        return $this->belongsTo('App\Pacote', 'questao_id');
     }
 }
