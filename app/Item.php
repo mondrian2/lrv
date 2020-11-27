@@ -6,13 +6,16 @@ use Illuminate\Database\Eloquent\Model;
 
 class Item extends Model
 {
-    protected $fillable = [
-        'label',
-        'options'
+    protected $casts = [
+        'options' => 'array'
     ];
 
-    public function options()
-    {
-        return $this->hasMany('App\Options', 'item_id');
-    }
+    protected $fillable = [
+        'label'
+    ];
+
+    // public function options()
+    // {
+    //     return $this->hasMany('App\Options', 'item_id');
+    // }
 }

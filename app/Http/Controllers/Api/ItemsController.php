@@ -18,6 +18,7 @@ class ItemsController extends Controller
 
     public function store(Request $request)
     {
+        // return $request;
         return response()->json($this->model::create($request->all()), 201);
   
     }
