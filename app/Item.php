@@ -13,10 +13,10 @@ class Item extends Model
     protected $fillable = [
         'label',
         'options',
-        'questao'
+        'questoes'
     ];
 
-    public function questao()
+    public function questoes()
     {
         return $this->belongsTo('App\Questao')->withDefault();
     }
