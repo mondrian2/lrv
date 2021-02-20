@@ -6,13 +6,12 @@ use Illuminate\Database\Eloquent\Model;
 
 class Exercicio extends Model
 {
-    // id: number;
-    // label: string;
-    // exercicio_id: number;
-    // opcoes: string[];
-    // correta?: string;
-
     protected $fillable = [
         'comando'
     ];
+
+    public function itens()
+    {
+        return $this->hasMany('App\Item', 'exercicio_id');
+    }
 }
