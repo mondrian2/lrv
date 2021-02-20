@@ -11,13 +11,15 @@ class CreateItemsTable extends Migration
      *
      * @return void
      */
+
     public function up()
     {
         Schema::create('items', function (Blueprint $table) {
             $table->id();
             $table->text('label');
             $table->text('options');
-            $table->foreignId('questoes_id');	
+            $table->text('correta');
+            $table->foreignId('exercicio_id');	
             $table->timestamps();
         });
     }

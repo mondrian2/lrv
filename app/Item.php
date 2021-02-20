@@ -13,11 +13,12 @@ class Item extends Model
     protected $fillable = [
         'label',
         'options',
-        'questoes'
+        'exercicio_id',
+        'correta'
     ];
 
-    public function questoes()
+    public function exercicio()
     {
-        return $this->belongsTo('App\Questao')->withDefault();
+        return $this->belongsTo('App\Exercicio')->withDefault();
     }
 }
