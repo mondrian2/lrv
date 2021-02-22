@@ -72,14 +72,25 @@ class RouteServiceProvider extends ServiceProvider
      */
     protected function mapApiRoutes()
     {
-        // Route::group([
-        //     'middleware' => ['api', 'cors'],
-        //     'namespace' => $this->namespace,
-        //     'prefix' => 'api',
-        // ], function ($router) {
-        //      //Add you routes here, for example:
-        //      Route::apiResource('/posts','PostController');
-        // });
+        Route::group([
+            'middleware' => ['api', 'cors'],
+            'namespace' => $this->namespace,
+            'prefix' => 'api',
+        ], function ($router) {
+             //Add you routes here, for example:
+            Route::apiResource('/posts','PostController');
+            Route::get('/exercicios', 'ExerciciosController');
+            Route::get('/exercicio/{id}', 'ExerciciosController');
+            Route::post('/exercicio', 'ExerciciosController');
+            Route::put('/exercicio/{id}', 'ExerciciosController');
+            Route::delete('/exercicio/{id}', 'ExerciciosController');
+
+            Route::get('/itens', 'ItemsController');
+            Route::get('/item/{id}', 'ItemsController');
+            Route::post('/item', 'ItemsController');
+            Route::put('/item/{id}', 'ItemsController');
+            Route::delete('/item/{id}', 'ItemsController');
+        });
 
         Route::prefix('api')
             ->middleware('api')
