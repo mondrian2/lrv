@@ -91,11 +91,5 @@ class RouteServiceProvider extends ServiceProvider
             Route::put('/item/{id}', 'ItemsController');
             Route::delete('/item/{id}', 'ItemsController');
         });
-
-        Route::prefix('api')
-            ->middleware('api')
-            ->middleware('cors')
-            ->namespace($this->namespace)
-            ->group(base_path('routes/api.php'));
     }
 }
