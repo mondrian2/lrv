@@ -78,7 +78,6 @@ class RouteServiceProvider extends ServiceProvider
             'prefix' => 'api',
         ], function ($router) {
              //Add you routes here, for example:
-            Route::apiResource('/posts','PostController');
             Route::get('/exercicios', 'ExerciciosController');
             Route::get('/exercicio/{id}', 'ExerciciosController');
             Route::post('/exercicio', 'ExerciciosController');
