@@ -2,6 +2,8 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Api\ExerciciosController;
+use App\Http\Controllers\Api\ItemsController;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,4 +21,18 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 
 Route::resource('items', 'Api\ItemsController'); 
-Route::resource('exercicios', 'Api\ExerciciosController'); 
+
+Route::get('/exercicios', [ExerciciosController::class, 'index']);
+Route::get('/exercicio/{id}', [ExerciciosController::class, 'show']);
+Route::post('/exercicio', [ExerciciosController::class, 'store']);
+Route::put('/exercicio/{id}', [ExerciciosController::class, 'update']);
+Route::delete('/exercicio/{id}', [ExerciciosController::class, 'destroy']);
+
+Route::get('/itens', [ItemsController::class, 'index']);
+Route::get('/item/{id}', [ItemsController::class, 'show']);
+Route::post('/item', [ItemsController::class, 'store']);
+Route::put('/item/{id}', [ItemsController::class, 'update']);
+Route::delete('/item/{id}', [ItemsController::class, 'destroy']);
+
+
+

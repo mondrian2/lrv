@@ -6,6 +6,10 @@ use Illuminate\Database\Eloquent\Model;
 
 class Item extends Model
 {
+
+    protected $table = 'items';
+
+
     protected $casts = [
         'options' => 'array'
     ];
@@ -14,11 +18,12 @@ class Item extends Model
         'label',
         'options',
         'exercicio_id',
-        'correta'
+        'correta',
+        'exercicio'
     ];
 
     public function exercicio()
     {
-        return $this->belongsTo('App\Exercicio')->withDefault();
+        return $this->belongsTo('App\Exercicio')->withDefault();;
     }
 }

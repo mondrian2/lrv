@@ -12,7 +12,7 @@ class ItemsController extends Controller
 
     public function index()
     {
-        $models = $this->model::with('options')->get()->toJson(JSON_PRETTY_PRINT);
+        $models = $this->model::with('exercicio')->get()->toJson(JSON_PRETTY_PRINT);
         return response($models, 200);
     }
 
