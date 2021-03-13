@@ -3,8 +3,8 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Api\ExerciciosController;
-use App\Http\Controllers\Api\ExercisesAlternativeController;
-use App\Http\Controllers\Api\ExercisesCompleteController;
+use App\Http\Controllers\Api\ExerciseAlternativeController;
+use App\Http\Controllers\Api\ExerciseCompleteController;
 use App\Http\Controllers\Api\ItemsController;
 
 /*
@@ -24,17 +24,17 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 
 Route::resource('items', 'Api\ItemsController');
 
-Route::get('/exercises-alternative', [ExercisesAlternativeController::class, 'index']);
-Route::get('/exercise-alternative/{id}', [ExercisesAlternativeController::class, 'show']);
-Route::post('/exercise-alternative', [ExercisesAlternativeController::class, 'store']);
-Route::put('/exercise-alternative/{id}', [ExercisesAlternativeController::class, 'update']);
-Route::delete('/exercise-alternative/{id}', [ExercisesAlternativeController::class, 'destroy']);
+Route::get('/exercises-alternative', [ExerciseAlternativeController::class, 'index']);
+Route::get('/exercise-alternative/{id}', [ExerciseAlternativeController::class, 'show']);
+Route::post('/exercise-alternative', [ExerciseAlternativeController::class, 'store']);
+Route::put('/exercise-alternative/{id}', [ExerciseAlternativeController::class, 'update']);
+Route::delete('/exercise-alternative/{id}', [ExerciseAlternativeController::class, 'destroy']);
 
-Route::get('/exercises-complete', [ExercisesCompleteController::class, 'index']);
-Route::get('/exercise-complete/{id}', [ExercisesCompleteController::class, 'show']);
-Route::post('/exercise-complete', [ExercisesCompleteController::class, 'store']);
-Route::put('/exercise-complete/{id}', [ExercisesCompleteController::class, 'update']);
-Route::delete('/exercise-complete/{id}', [ExercisesCompleteController::class, 'destroy']);
+Route::get('/exercises-complete', [ExerciseCompleteController::class, 'index']);
+Route::get('/exercise-complete/{id}', [ExerciseCompleteController::class, 'show']);
+Route::post('/exercise-complete', [ExerciseCompleteController::class, 'store']);
+Route::put('/exercise-complete/{id}', [ExerciseCompleteController::class, 'update']);
+Route::delete('/exercise-complete/{id}', [ExerciseCompleteController::class, 'destroy']);
 
 Route::get('/exercicios', [ExerciciosController::class, 'index']);
 Route::get('/exercicio/{id}', [ExerciciosController::class, 'show']);
