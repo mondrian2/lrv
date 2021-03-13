@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="eb3d29ec-cea3-4a20-898f-60d743ee18a0" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2021_03_13_000330_create_exercise_completes_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_03_13_000330_create_exercise_completes_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2021_03_13_000355_create_exercise_alternatives_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_03_13_000355_create_exercise_alternatives_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/CorsMiddleware.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/CorsMiddleware.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -160,7 +159,7 @@
       <option name="presentableId" value="Default" />
       <updated>1614809237988</updated>
       <workItem from="1614809242926" duration="614000" />
-      <workItem from="1615593667485" duration="11510000" />
+      <workItem from="1615593667485" duration="14419000" />
     </task>
     <task id="LOCAL-00001" summary="insere modelos novos">
       <created>1615595942140</created>
@@ -218,7 +217,14 @@
       <option name="project" value="LOCAL" />
       <updated>1615641591677</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="migrate">
+      <created>1615643757209</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1615643757209</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -228,6 +234,7 @@
     <MESSAGE value="insere modelos novos" />
     <MESSAGE value="ajusta rotas" />
     <MESSAGE value="cors" />
-    <option name="LAST_COMMIT_MESSAGE" value="cors" />
+    <MESSAGE value="migrate" />
+    <option name="LAST_COMMIT_MESSAGE" value="migrate" />
   </component>
 </project>
