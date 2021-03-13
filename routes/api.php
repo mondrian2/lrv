@@ -20,7 +20,19 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::resource('items', 'Api\ItemsController'); 
+Route::resource('items', 'Api\ItemsController');
+
+Route::get('/exercises-alternative', [ExercisesAlternativeController::class, 'index']);
+Route::get('/exercise-alternative/{id}', [ExercisesAlternativeController::class, 'show']);
+Route::post('/exercise-alternative', [ExercisesAlternativeController::class, 'store']);
+Route::put('/exercise-alternative/{id}', [ExercisesAlternativeController::class, 'update']);
+Route::delete('/exercise-alternative/{id}', [ExercisesAlternativeController::class, 'destroy']);
+
+Route::get('/exercises-complete', [ExercisesCompleteController::class, 'index']);
+Route::get('/exercise-complete/{id}', [ExercisesCompleteController::class, 'show']);
+Route::post('/exercise-complete', [ExercisesCompleteController::class, 'store']);
+Route::put('/exercise-complete/{id}', [ExercisesCompleteController::class, 'update']);
+Route::delete('/exercise-complete/{id}', [ExercisesCompleteController::class, 'destroy']);
 
 Route::get('/exercicios', [ExerciciosController::class, 'index']);
 Route::get('/exercicio/{id}', [ExerciciosController::class, 'show']);
