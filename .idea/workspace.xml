@@ -3,7 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="eb3d29ec-cea3-4a20-898f-60d743ee18a0" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/ExercisesAlternativeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/ExercisesAlternativeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/ExercisesCompleteController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/ExercisesCompleteController.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -159,7 +160,7 @@
       <option name="presentableId" value="Default" />
       <updated>1614809237988</updated>
       <workItem from="1614809242926" duration="614000" />
-      <workItem from="1615593667485" duration="3726000" />
+      <workItem from="1615593667485" duration="4150000" />
     </task>
     <task id="LOCAL-00001" summary="insere modelos novos">
       <created>1615595942140</created>
@@ -182,7 +183,14 @@
       <option name="project" value="LOCAL" />
       <updated>1615601708592</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="ajusta rotas">
+      <created>1615602049858</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1615602049858</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

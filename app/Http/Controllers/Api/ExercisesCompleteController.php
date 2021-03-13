@@ -4,11 +4,11 @@ namespace App\Http\Controllers\Api;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-use App\ExercisesComplete;
+use App\ExerciseComplete;
 
-class ExercisesCompleteController extends Controller
+class ExerciseCompleteController extends Controller
 {
-    public $model = ExercisesComplete::class;
+    public $model = ExerciseComplete::class;
 
     public function index()
     {
