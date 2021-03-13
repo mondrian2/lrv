@@ -3,6 +3,8 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Api\ExerciciosController;
+use App\Http\Controllers\Api\ExercisesAlternativeController;
+use App\Http\Controllers\Api\ExercisesCompleteController;
 use App\Http\Controllers\Api\ItemsController;
 
 /*
