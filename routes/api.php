@@ -25,7 +25,6 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 Route::resource('items', 'Api\ItemsController');
 
 Route::middleware(['cors'])->group(function () {
-
     Route::get('/exercises-alternative', [ExerciseAlternativeController::class, 'index']);
     Route::get('/exercise-alternative/{id}', [ExerciseAlternativeController::class, 'show']);
     Route::post('/exercise-alternative', [ExerciseAlternativeController::class, 'store']);
@@ -49,8 +48,4 @@ Route::middleware(['cors'])->group(function () {
     Route::post('/item', [ItemsController::class, 'store']);
     Route::put('/item/{id}', [ItemsController::class, 'update']);
     Route::delete('/item/{id}', [ItemsController::class, 'destroy']);
-
-}
-
-
-
+});

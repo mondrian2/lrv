@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="eb3d29ec-cea3-4a20-898f-60d743ee18a0" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Kernel.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -160,7 +159,7 @@
       <option name="presentableId" value="Default" />
       <updated>1614809237988</updated>
       <workItem from="1614809242926" duration="614000" />
-      <workItem from="1615593667485" duration="7729000" />
+      <workItem from="1615593667485" duration="9819000" />
     </task>
     <task id="LOCAL-00001" summary="insere modelos novos">
       <created>1615595942140</created>
@@ -204,7 +203,14 @@
       <option name="project" value="LOCAL" />
       <updated>1615602672284</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="cors">
+      <created>1615639357993</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1615639357993</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -213,6 +219,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="insere modelos novos" />
     <MESSAGE value="ajusta rotas" />
-    <option name="LAST_COMMIT_MESSAGE" value="ajusta rotas" />
+    <MESSAGE value="cors" />
+    <option name="LAST_COMMIT_MESSAGE" value="cors" />
   </component>
 </project>
