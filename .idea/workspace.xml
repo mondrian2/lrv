@@ -2,20 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eb3d29ec-cea3-4a20-898f-60d743ee18a0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/lrv.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/ExerciseAlternative.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/ExerciseComplete.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/ExercisesAlternativeController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/ExercisesCompleteController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/ItemAlternative.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/ItemComplete.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2021_03_13_000330_create_exercise_completes_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2021_03_13_000355_create_exercise_alternatives_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2021_03_13_001330_create_item_alternatives_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2021_03_13_001348_create_item_completes_table.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -171,11 +159,23 @@
       <option name="presentableId" value="Default" />
       <updated>1614809237988</updated>
       <workItem from="1614809242926" duration="614000" />
-      <workItem from="1615593667485" duration="2219000" />
+      <workItem from="1615593667485" duration="3317000" />
     </task>
+    <task id="LOCAL-00001" summary="insere modelos novos">
+      <created>1615595942140</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1615595942140</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="insere modelos novos" />
+    <option name="LAST_COMMIT_MESSAGE" value="insere modelos novos" />
   </component>
 </project>
