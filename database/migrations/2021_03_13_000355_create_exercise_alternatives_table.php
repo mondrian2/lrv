@@ -15,9 +15,9 @@ class CreateExerciseAlternativesTable extends Migration
     {
         Schema::create('exercises_alternative', function (Blueprint $table) {
             $table->id();
-            $table->string('command');
-            $table->string('book');
-            $table->string('package');
+            $table->text('command');
+            $table->text('book');
+            $table->text('package');
             $table->timestamps();
         });
     }
