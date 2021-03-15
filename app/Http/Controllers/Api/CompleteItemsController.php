@@ -4,11 +4,11 @@ namespace App\Http\Controllers\Api;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-use App\Item;
+use App\CompleteItem;
 
-class ItemsController extends Controller
+class CompleteItemsController extends Controller
 {
-    public $model = Item::class;
+    public $model = CompleteItem::class;
 
     public function index()
     {

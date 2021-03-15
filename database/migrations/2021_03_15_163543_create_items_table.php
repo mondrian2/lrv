@@ -13,7 +13,7 @@ class CreateItemsTable extends Migration
      */
     public function up()
     {
-        Schema::create('items', function (Blueprint $table) {
+        Schema::create('completeitems', function (Blueprint $table) {
             $table->id();
             $table->integer('exerciseId');
             $table->text('label');
@@ -29,6 +29,6 @@ class CreateItemsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('items');
+        Schema::dropIfExists('completeitems');
     }
 }
