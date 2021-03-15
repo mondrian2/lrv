@@ -11,7 +11,7 @@ class Item extends Model
     ];
     protected $fillable = [
         'id',
-        'ExerciseId',
+        'exerciseId',
         'label',
         'options'
     ];

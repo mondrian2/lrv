@@ -37,10 +37,10 @@ class ItemsController extends Controller
     {
         if ($this->model::where('id', $id)->exists()) {
             $model = $this->model::find($id);
-            $model->id = $request->id
-            $model->ExerciseId = $request->ExerciseId
-            $model->label = $request->label
-            $model->options = $request->options
+            $model->id = $request->id;
+            $model->exerciseId = $request->exerciseId;
+            $model->label = $request->label;
+            $model->options = $request->options;
             $model->save();
             return response()->json([
               "message" => "records updated successfully..."
