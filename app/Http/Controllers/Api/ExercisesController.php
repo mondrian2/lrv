@@ -12,7 +12,7 @@ class ExercisesController extends Controller
 
     public function index()
     {
-        $models = $this->model::with('itens')->get()->toJson(JSON_PRETTY_PRINT);
+        $models = $this->model::all()->toJson(JSON_PRETTY_PRINT);
         return response($models, 200);
     }
 
