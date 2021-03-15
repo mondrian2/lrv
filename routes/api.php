@@ -25,4 +25,10 @@ Route::post('/exercise', [ExercisesController::class, 'store']);
 Route::put('/exercise/{id}', [ExercisesController::class, 'update']);
 Route::delete('/exercise/{id}', [ExercisesController::class, 'destroy']);
 
+Route::get('/items', [ItemsController::class, 'index']);
+Route::get('/item/{id}', [ItemsController::class, 'show']);
+Route::post('/item', [ItemsController::class, 'store']);
+Route::put('/item/{id}', [ItemsController::class, 'update']);
+Route::delete('/item/{id}', [ItemsController::class, 'destroy']);
+
 
