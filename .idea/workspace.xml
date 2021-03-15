@@ -2,20 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eb3d29ec-cea3-4a20-898f-60d743ee18a0" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Exercicio.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/ExerciseAlternative.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/ExerciseComplete.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/ExerciciosController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/ExercisesController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/ExercisesAlternativeController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/ExercisesCompleteController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/ItemsController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Item.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/ItemAlternative.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/ItemComplete.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Questao.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2021_02_20_142815_create_exercicios_table.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/ExercisesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/ExercisesController.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -182,7 +169,7 @@
       <workItem from="1615593667485" duration="20620000" />
       <workItem from="1615730832146" duration="611000" />
       <workItem from="1615738194976" duration="146000" />
-      <workItem from="1615758666976" duration="3286000" />
+      <workItem from="1615758666976" duration="3453000" />
     </task>
     <task id="LOCAL-00001" summary="insere modelos novos">
       <created>1615595942140</created>

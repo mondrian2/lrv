@@ -6,7 +6,7 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Exercise;
 
-class ExerciseController extends Controller
+class ExercisesController extends Controller
 {
     public $model = Exercise::class;
 
