@@ -2,10 +2,7 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\Api\ExerciciosController;
-use App\Http\Controllers\Api\ExerciseAlternativeController;
-use App\Http\Controllers\Api\ExerciseCompleteController;
-use App\Http\Controllers\Api\ItemsController;
+use App\Http\Controllers\Api\ExercisesController;
 
 /*
 |--------------------------------------------------------------------------
@@ -22,10 +19,10 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::get('/exercises', [ExerciseAlternativeController::class, 'index']);
-Route::get('/exercise/{id}', [ExerciseAlternativeController::class, 'show']);
-Route::post('/exercise', [ExerciseAlternativeController::class, 'store']);
-Route::put('/exercise/{id}', [ExerciseAlternativeController::class, 'update']);
-Route::delete('/exercise/{id}', [ExerciseAlternativeController::class, 'destroy']);
+Route::get('/exercises', [ExercisesController::class, 'index']);
+Route::get('/exercise/{id}', [ExercisesController::class, 'show']);
+Route::post('/exercise', [ExercisesController::class, 'store']);
+Route::put('/exercise/{id}', [ExercisesController::class, 'update']);
+Route::delete('/exercise/{id}', [ExercisesController::class, 'destroy']);
 
 

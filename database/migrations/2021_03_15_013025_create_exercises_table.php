@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateExerciciosTable extends Migration
+class CreateExercisesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,7 +13,7 @@ class CreateExerciciosTable extends Migration
      */
     public function up()
     {
-        Schema::create('exercicios', function (Blueprint $table) {
+        Schema::create('exercises', function (Blueprint $table) {
             $table->id();
             $table->text('number');
             $table->text('command');
@@ -31,6 +31,6 @@ class CreateExerciciosTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('exercicios');
+        Schema::dropIfExists('exercises');
     }
 }
