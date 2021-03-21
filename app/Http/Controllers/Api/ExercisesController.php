@@ -37,11 +37,13 @@ class ExercisesController extends Controller
     {
         if ($this->model::where('id', $id)->exists()) {
             $model = $this->model::find($id);
-            $model->number = $request->number;
-            $model->command = $request->command;
-            $model->book = $request->book;
+            $model->level = $request->level;
             $model->package = $request->package;
             $model->type = $request->type;
+            $model->number = $request->number;
+            $model->instructionOne = $request->instructionOne;
+            $model->instructionTwo = $request->instructionTwo;
+            $model->instructionTree = $request->instructionTree;
             $model->save();
             return response()->json([
               "message" => "records updated successfully..."
