@@ -3,10 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="eb3d29ec-cea3-4a20-898f-60d743ee18a0" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/ItemsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/CompleteItemsController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Item.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/CompleteItem.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2021_03_15_163543_create_items_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_03_15_163543_create_items_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Exercise.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Exercise.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2021_03_15_013025_create_exercises_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_03_15_013025_create_exercises_table.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -141,13 +139,15 @@
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/Http/Controllers/Api" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -173,7 +173,9 @@
       <workItem from="1615593667485" duration="20620000" />
       <workItem from="1615730832146" duration="611000" />
       <workItem from="1615738194976" duration="146000" />
-      <workItem from="1615758666976" duration="18646000" />
+      <workItem from="1615758666976" duration="22394000" />
+      <workItem from="1615911983042" duration="90000" />
+      <workItem from="1616330539706" duration="741000" />
     </task>
     <task id="LOCAL-00001" summary="insere modelos novos">
       <created>1615595942140</created>

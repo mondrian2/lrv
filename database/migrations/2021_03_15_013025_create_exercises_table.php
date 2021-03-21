@@ -15,11 +15,13 @@ class CreateExercisesTable extends Migration
     {
         Schema::create('exercises', function (Blueprint $table) {
             $table->id();
-            $table->text('number');
-            $table->text('command');
-            $table->text('book');
+            $table->text('level');
             $table->text('package');
             $table->text('type');
+            $table->text('number');
+            $table->text('instructionOne');
+            $table->text('instructionTwo');
+            $table->text('instructionTree');
             $table->timestamps();
         });
     }
