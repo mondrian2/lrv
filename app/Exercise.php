@@ -7,13 +7,13 @@ use Illuminate\Database\Eloquent\Model;
 class Exercise extends Model
 {
     protected $fillable = [
-        'id'
-        'level'
-        'package'
-        'type'
-        'number'
-        'instructionOne'
-        'instructionTwo'
+        'id',
+        'level',
+        'package',
+        'type',
+        'number',
+        'instructionOne',
+        'instructionTwo',
         'instructionTree'
     ];
 }
