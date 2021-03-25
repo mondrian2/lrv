@@ -24,7 +24,7 @@ class CompleteItemsController extends Controller
     public function showByExercise($id)
     {
         if ($this->model::where('exerciseId', $id)->exists()) {
-            $model = $this->model::where('exerciseId', $id)->first()->toJson(JSON_PRETTY_PRINT);
+            $model = $this->model::where('exerciseId', $id)->get()->toJson(JSON_PRETTY_PRINT);
             return response($model, 200);
         } else {
             return response()->json([

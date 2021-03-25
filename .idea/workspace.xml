@@ -1,16 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="17769a6b-a058-4819-a03a-036426b4c928" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/lrv.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/lrv.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="17769a6b-a058-4819-a03a-036426b4c928" name="Default Changelist" comment="create and point by exercise" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
   </component>
@@ -151,7 +148,16 @@
       <option name="presentableId" value="Default" />
       <updated>1616451289635</updated>
       <workItem from="1616451291247" duration="2577000" />
+      <workItem from="1616637352045" duration="314000" />
     </task>
+    <task id="LOCAL-00001" summary="create and point by exercise">
+      <created>1616637514125</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1616637514125</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -167,5 +173,10 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="create and point by exercise" />
+    <option name="LAST_COMMIT_MESSAGE" value="create and point by exercise" />
   </component>
 </project>
