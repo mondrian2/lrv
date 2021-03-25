@@ -28,6 +28,7 @@ Route::delete('/exercise/{id}', [ExercisesController::class, 'destroy']);
 
 Route::get('/complete-items', [CompleteItemsController::class, 'index']);
 Route::get('/complete-item/{id}', [CompleteItemsController::class, 'show']);
+Route::get('/complete-item-by-exercise/{id}', [CompleteItemsController::class, 'showByExercise']);
 Route::post('/complete-item', [CompleteItemsController::class, 'store']);
 Route::put('/complete-item/{id}', [CompleteItemsController::class, 'update']);
 Route::delete('/complete-item/{id}', [CompleteItemsController::class, 'destroy']);

@@ -21,6 +21,18 @@ class CompleteItemsController extends Controller
         return response()->json($this->model::create($request->all()), 201);
     }
 
+    public function showByExercise($id)
+    {
+        if ($this->model::where('exerciseId', $id)->exists()) {
+            $model = $this->model::where('exerciseId', $id)->first()->toJson(JSON_PRETTY_PRINT);
+            return response($model, 200);
+        } else {
+            return response()->json([
+                "message" => "not found"
+            ], 404);
+        }
+    }
+
     public function show($id)
     {
         if ($this->model::where('id', $id)->exists()) {
