@@ -12,7 +12,7 @@ class AnswersController extends Controller
 
     public function index()
     {
-        $models = $this->model::all()->toJson(JSON_PRETTY_PRINT);
+        $models = $this->model::orderBy('id', 'asc')->get()->toJson(JSON_PRETTY_PRINT);
         return response($models, 200);
     }
 
