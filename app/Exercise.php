@@ -12,8 +12,6 @@ class Exercise extends Model
         'package',
         'type',
         'number',
-        'instructionOne',
-        'instructionTwo',
-        'instructionTree'
+        'instruction'
     ];
 }

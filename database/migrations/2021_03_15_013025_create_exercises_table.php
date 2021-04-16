@@ -19,9 +19,7 @@ class CreateExercisesTable extends Migration
             $table->text('package');
             $table->text('type');
             $table->text('number');
-            $table->text('instructionOne');
-            $table->text('instructionTwo');
-            $table->text('instructionTree');
+            $table->text('instruction');
             $table->timestamps();
         });
     }
