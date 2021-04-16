@@ -41,9 +41,7 @@ class ExercisesController extends Controller
             $model->package = $request->package;
             $model->type = $request->type;
             $model->number = $request->number;
-            $model->instructionOne = $request->instructionOne;
-            $model->instructionTwo = $request->instructionTwo;
-            $model->instructionTree = $request->instructionTree;
+            $model->instruction = $request->instruction;
             $model->save();
             return response()->json([
               "message" => "records updated successfully..."
