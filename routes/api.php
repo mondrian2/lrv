@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Api\ExercisesController;
 use App\Http\Controllers\Api\CompleteItemsController;
 use App\Http\Controllers\Api\AnswersController;
+use App\Http\Controllers\Api\AlternativeController;
 
 /*
 |--------------------------------------------------------------------------
@@ -40,5 +41,12 @@ Route::get('/answer-item-by-exercise/{id}', [AnswersController::class, 'showByEx
 Route::post('/answer-item', [AnswersController::class, 'store']);
 Route::put('/answer-item/{id}', [AnswersController::class, 'update']);
 Route::delete('/answer-item/{id}', [AnswersController::class, 'destroy']);
+
+Route::get('/alternative-items', [AlternativeController::class, 'index']);
+Route::get('/alternative-item/{id}', [AlternativeController::class, 'show']);
+Route::get('/alternative-item-by-exercise/{id}', [AlternativeController::class, 'showByExercise']);
+Route::post('/alternative-item', [AlternativeController::class, 'store']);
+Route::put('/alternative-item/{id}', [AlternativeController::class, 'update']);
+Route::delete('/alternative-item/{id}', [AlternativeController::class, 'destroy']);
 
 
